@@ -5,7 +5,7 @@ import { routes } from './routes'
 const app = express()
 const PORT_LOCAL = 3333
 
-app.listen(process.env.PORT  PORT_LOCAL, ()=>{
+app.listen(process.env.PORT || PORT_LOCAL, ()=>{
     console.log("HTTP server running")
 })
 app.use(cors())
