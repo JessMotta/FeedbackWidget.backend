@@ -9,7 +9,7 @@ app.listen(PORT, ()=>{
     console.log("HTTP server running! On port " + PORT)
 })
 app.use(cors())
-app.use(express.json())0
+app.use(express.json({limit: '5gb'}))
 app.use(routes)
 
 
